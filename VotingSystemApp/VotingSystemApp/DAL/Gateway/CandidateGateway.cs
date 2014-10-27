@@ -9,25 +9,20 @@ using VotingSystemApp.DAL.DAO;
 
 namespace VotingSystemApp.DAL.Gateway
 {
-    class CandidateGateway
+    internal class CandidateGateway:Gateway
     {
-        private SqlConnection connection;
-        public CandidateGateway()
-        {
-            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlcon"].ConnectionString);
-        }
-
         public string Save(Candidate aCandidate)
         {
             connection.Open();
-            string query = string.Format("INSERT INTO t_Candidate VALUES('{0}','{1}')",aCandidate.Name,aCandidate.Symbol);
-            SqlCommand command = new SqlCommand(query,connection);
+            string query = string.Format("INSERT INTO t_Candidate VALUES('{0}','{1}')", aCandidate.Name,
+                aCandidate.Symbol);
+            SqlCommand command = new SqlCommand(query, connection);
             int affectedrows = command.ExecuteNonQuery();
             connection.Close();
-            if (affectedrows>0)
+            if (affectedrows > 0)
             {
                 return "Candidate Insert Successfully";
-                
+
             }
             return "Insert Fail";
         }
@@ -36,7 +31,7 @@ namespace VotingSystemApp.DAL.Gateway
         {
             connection.Open();
             string query = string.Format("SELECT * FROM t_Candidate");
-            SqlCommand command = new SqlCommand(query,connection);
+            SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader aReader = command.ExecuteReader();
             List<Candidate> aCandidates = new List<Candidate>();
             bool HasRows = aReader.HasRows;
@@ -50,9 +45,11 @@ namespace VotingSystemApp.DAL.Gateway
                     aCandidate.Symbol = aReader[2].ToString();
                     aCandidates.Add(aCandidate);
 
-                } 
-            
-                connection.Close();
+                }
+
+
+            }
+            connection.Close();
             return aCandidates;
         }
     }

@@ -53,6 +53,7 @@
     <Compile Include="DAL\DAO\Candidate.cs" />
     <Compile Include="DAL\DAO\Vote.cs" />
     <Compile Include="DAL\Gateway\CandidateGateway.cs" />
+    <Compile Include="DAL\Gateway\Gateway.cs" />
     <Compile Include="UI\CandidateEntryUI.cs">
       <SubType>Form</SubType>
     </Compile>
