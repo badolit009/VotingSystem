@@ -9,14 +9,16 @@ using VotingSystemApp.DAL.DAO;
 
 namespace VotingSystemApp.DAL.Gateway
 {
-    internal class CandidateGateway:Gateway
+    internal class CandidateGateway : Gateway
     {
         public string Save(Candidate aCandidate)
         {
             connection.Open();
-            string query = string.Format("INSERT INTO t_Candidate VALUES('{0}','{1}')", aCandidate.Name,
-                aCandidate.Symbol);
-            SqlCommand command = new SqlCommand(query, connection);
+            query = "INSERT INTO t_Candidate (Name,Symbol) VALUES(@0,@1)";
+            command = new SqlCommand(query, connection);
+            command.Parameters.Clear();
+            command.Parameters.AddWithValue("@0", aCandidate.Name);
+            command.Parameters.AddWithValue("@1", aCandidate.Symbol);
             int affectedrows = command.ExecuteNonQuery();
             connection.Close();
             if (affectedrows > 0)
@@ -30,8 +32,8 @@ namespace VotingSystemApp.DAL.Gateway
         public List<Candidate> ShowSymbol()
         {
             connection.Open();
-            string query = string.Format("SELECT * FROM t_Candidate");
-            SqlCommand command = new SqlCommand(query, connection);
+            query = string.Format("SELECT * FROM t_Candidate");
+            command = new SqlCommand(query, connection);
             SqlDataReader aReader = command.ExecuteReader();
             List<Candidate> aCandidates = new List<Candidate>();
             bool HasRows = aReader.HasRows;
@@ -40,7 +42,7 @@ namespace VotingSystemApp.DAL.Gateway
                 while (aReader.Read())
                 {
                     Candidate aCandidate = new Candidate();
-                    aCandidate.Id = (int) aReader[0];
+                    aCandidate.Id = (int)aReader[0];
                     aCandidate.Name = aReader[1].ToString();
                     aCandidate.Symbol = aReader[2].ToString();
                     aCandidates.Add(aCandidate);

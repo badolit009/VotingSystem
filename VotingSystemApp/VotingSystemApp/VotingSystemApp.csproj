@@ -51,9 +51,11 @@
     <Compile Include="BLL\CndidateBLL.cs" />
     <Compile Include="BLL\VoteBLL.cs" />
     <Compile Include="DAL\DAO\Candidate.cs" />
-    <Compile Include="DAL\DAO\Vote.cs" />
+    <Compile Include="DAL\DAO\NoOfWinner.cs" />
+    <Compile Include="DAL\DAO\Voter.cs" />
     <Compile Include="DAL\Gateway\CandidateGateway.cs" />
     <Compile Include="DAL\Gateway\Gateway.cs" />
+    <Compile Include="DAL\Gateway\VoteGateway.cs" />
     <Compile Include="UI\CandidateEntryUI.cs">
       <SubType>Form</SubType>
     </Compile>

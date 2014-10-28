@@ -21,3 +21,16 @@ C:\Users\acer\Desktop\VoteApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\D
 C:\Users\acer\Desktop\VoteApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.csproj.GenerateResource.Cache
 C:\Users\acer\Desktop\VoteApp\VotingSystem\VotingSystemApp\VotingSystemApp\bin\Debug\VotingSystemApp.exe
 C:\Users\acer\Desktop\VoteApp\VotingSystem\VotingSystemApp\VotingSystemApp\bin\Debug\VotingSystemApp.pdb
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\bin\Debug\VotingSystemApp.exe.config
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.exe
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.pdb
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\bin\Debug\VotingSystemApp.exe
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\bin\Debug\VotingSystemApp.pdb
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.csprojResolveAssemblyReference.cache
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.UI.CandidateEntryUI.resources
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.MainUI.resources
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.Properties.Resources.resources
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.NoOfWinnersUI.resources
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.ResultUI.resources
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.VoteCastUI.resources
+C:\Users\Badol Hossain\Desktop\VotingApp\VotingSystem\VotingSystemApp\VotingSystemApp\obj\Debug\VotingSystemApp.csproj.GenerateResource.Cache

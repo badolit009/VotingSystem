@@ -60,7 +60,7 @@
             this.voteCastButton.Name = "voteCastButton";
             this.voteCastButton.Size = new System.Drawing.Size(233, 49);
             this.voteCastButton.TabIndex = 8;
-            this.voteCastButton.Text = "Vote Cast";
+            this.voteCastButton.Text = "Voter Cast";
             this.voteCastButton.UseVisualStyleBackColor = true;
             this.voteCastButton.Click += new System.EventHandler(this.voteCastButton_Click);
             // 
